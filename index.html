@@ -1,13 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/main.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="put">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <header class="header px-16 py-4">
+      <nav>
+        <ul class="flex items-center justify-between">
+          <li class="logo">
+            <a href="/" class="animate-spin origin-top-right skew-12"
+              ><img src="./asset/svg/cashapp__logo.svg" alt="cashapp__logo"
+            /></a>
+          </li>
+          <ul class="nav-links">
+            <li class="nav-list list"><a href="#">Sign In</a></li>
+            <li class="nav-list list"><a href="#">Legal</a></li>
+            <li class="nav-list list"><a href="#">Licenses</a></li>
+            <li class="nav-list list"><a href="#">Security</a></li>
+            <li class="nav-list list"><a href="#">Status</a></li>
+            <li class="nav-list list"><a href="#">Support</a></li>
+            <li class="nav-list list"><a href="#">Press</a></li>
+            <li class="nav-list list"><a href="#">Careers</a></li>
+            <li class="nav-list list"><a href="#">Codeblog</a></li>
+          </ul>
+          <li class="menu">
+            <a href="#" class="animate-pulse"><img src="./asset/image/eye-icons.svg" alt="menu" /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hero">
+        <div class="textbox">
+          <h1 class="heading-primary">
+            <span class="-z-10">cash</span
+            ><span class="translate-0.5 z-30">app</span>
+          </h1>
+          <figure class="phone-figure">
+            <img
+              src="./asset/image/intro-phone 1.png"
+              alt="phone"
+              class="phone"
+            />
+          </figure>
+        </div>
+
+        <figure class="objects w-[75%]">
+          <img class="topLeft" src="./asset/svg/intro-cube 1.svg" alt="cube" />
+          <img
+            class="topRight"
+            src="./asset/image/intro-stairs 1.svg"
+            alt="stairs"
+          />
+          <img
+            class="bottomLeft"
+            src="./asset/image/intro-cubes 1.svg"
+            alt="cubes"
+          />
+          <img
+            class="bottomRight"
+            src="./asset/image/intro-pillar 1.svg"
+            alt="pillar"
+          />
+        </figure>
+      </div>
+    </header>
+    <footer class="footer align">
+      <div class="buttons">
+        <button class="btn">
+          <img src="./asset/svg/applesvg.svg" alt="" /><span>APP STORE</span>
+        </button>
+        <button class="btn">
+          <img src="./asset/svg/play.svg" alt="" /><span class="p-3"
+            >GOOGLE PLAY</span
+          >
+        </button>
+      </div>
+      <div class="animate-bounce duration-500"><img src="./asset/svg/arrow.svg" alt="" /></div>
+      <div class=" flex items-center justify-center gap-9">
+        <p class="text-[10px] xl:text-sm text-left footer-dec">
+          Brokerage services by Cash App Investing LLC, member FINRA / SIPC. See
+          our BrokerCheck. Investing involves risk; you may lose money. Bitcoin
+          trading offered by Cash App. Cash App Investing does not trade bitcoin
+          and Cash App is not a member of FINRA or SIPC. Cash App facilitates
+          banking services through Sutton Bank and Lincoln Savings Bank, Members
+          FDIC.
+        </p>
+        <figure class="flex items-center justify-center gap-8">
+          <img src="./asset/svg/chat.svg" alt="chat" />
+          <img src="./asset/svg/twitter.svg" alt="twitter" />
+          <img src="./asset/svg/instagram.svg" alt="instagram" />
+        </figure>
+      </div>
+    </footer>
+
+    <!-- gsap links Alex keep off -->
+    <script src="/./animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+  </body>
 </html>
