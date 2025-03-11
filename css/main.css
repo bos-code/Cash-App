@@ -627,6 +627,12 @@ nav {
   }
 }
 
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
 @keyframes bounce {
   0%,
   100% {
