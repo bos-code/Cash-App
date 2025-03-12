@@ -7,16 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/font.css" />
     <link href="./css/main.css" rel="stylesheet" />
+    <link href="./src/input.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   </head>
   <body>
     <header class="header px-16 py-4">
-      <nav>
-        <ul class="flex items-center justify-between">
+      <nav class="navigation">
+        <input type="checkbox" id="checkbox" />
+        <ul class="nav-wrapper flex items-center justify-between">
           <li class="logo">
             <a href="/" class="animate-spin origin-top-right skew-12"
               ><img src="./asset/svg/cashapp__logo.svg" alt="cashapp__logo"
@@ -34,7 +35,14 @@
             <li class="nav-list list"><a href="#">Codeblog</a></li>
           </ul>
           <li class="menu">
-            <a href="#" class="animate-pulse"><img src="./asset/image/eye-icons.svg" alt="menu" /></a>
+            <a href="#" class="animate-pulse"
+              ><img src="./asset/image/eye-icons.svg" alt="menu"
+            /></a>
+
+            <label class="nav_button" for="checkbox">
+              <span class="open"><ion-icon name="menu"></ion-icon></span>
+              <span class="close"><ion-icon name="close"></ion-icon></span
+            ></label>
           </li>
         </ul>
       </nav>
@@ -49,8 +57,7 @@
             <img
               src="./asset/image/intro-phone 1.png"
               alt="phone"
-              class="phone"
-            />
+              class="phone" />
           </figure>
         </div>
 
@@ -59,18 +66,15 @@
           <img
             class="topRight"
             src="./asset/image/intro-stairs 1.svg"
-            alt="stairs"
-          />
+            alt="stairs" />
           <img
             class="bottomLeft"
             src="./asset/image/intro-cubes 1.svg"
-            alt="cubes"
-          />
+            alt="cubes" />
           <img
             class="bottomRight"
             src="./asset/image/intro-pillar 1.svg"
-            alt="pillar"
-          />
+            alt="pillar" />
         </figure>
       </div>
     </header>
@@ -85,8 +89,10 @@
           >
         </button>
       </div>
-      <div class="animate-bounce duration-500"><img src="./asset/svg/arrow.svg" alt="" /></div>
-      <div class=" flex items-center justify-center gap-9">
+      <div class="animate-bounce duration-500">
+        <img src="./asset/svg/arrow.svg" alt="" />
+      </div>
+      <div class="flex items-center justify-center gap-9">
         <p class="text-[10px] xl:text-sm text-left footer-dec">
           Brokerage services by Cash App Investing LLC, member FINRA / SIPC. See
           our BrokerCheck. Investing involves risk; you may lose money. Bitcoin
@@ -102,6 +108,9 @@
         </figure>
       </div>
     </footer>
+
+    <!-- gsap links Chidera keep off -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <!-- gsap links Alex keep off -->
     <script src="/./animation.js"></script>
