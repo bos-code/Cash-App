@@ -104,6 +104,7 @@ nav {
 }
 .objects img {
   position: absolute;
+  display: flex;
 }
 .bottomRight {
   bottom: 0;
@@ -212,7 +213,129 @@ nav {
 }
 
 @media only screen and (max-width: 900px) {
+  /* BUTTON STYLES */
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 3);
+  }
+
+  /* FOOTER STYLES */
+
+  .foot-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  /* HERO STYLES */
+
+  .hero {
+    position: relative;
+    top: -10rem;
+  }
+
+  /* OBJECT STYLES */
+
+  .objects img {
+    display: none;
+  }
+
+  /* BUTTON STYLES */
+
+  .buttons {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 5);
+    margin-bottom: 4rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* HERO STYLES */
+
+  .hero {
+    position: relative;
+    top: -12rem;
+  }
+
+  /* OBJECT STYLES */
+
+  .objects img {
+    display: none;
+  }
+
+  /* BUTTON STYLES */
+
+  .buttons {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 5);
+    margin-bottom: 2rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* NAVIGATION */
+
+  .nav-wrapper .logo {
+    height: 4rem;
+    width: 4rem;
+    background-color: orangered;
+  }
+
+  /* HERO STYLES */
+
+  .hero {
+    position: relative;
+    top: -12rem;
+  }
+
+  /* OBJECT STYLES */
+
+  .objects img {
+    display: none;
+  }
+
+  /* BUTTON STYLES */
+
+  .buttons {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 5);
+    margin-bottom: 1.75rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
