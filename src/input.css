@@ -265,6 +265,12 @@ nav {
   }
 }
 @media only screen and (max-width: 500px) {
+  /* NAVIGATION STYLES */
+  .navigation {
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
   /* HERO STYLES */
 
   .hero {
