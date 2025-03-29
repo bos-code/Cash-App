@@ -8,12 +8,18 @@ const object = gsap.utils.toArray(".icons");
 
 tl.fromTo(
   list,
-  { y: -100, opacity: 0, rotateY: 180 }, // Start above with a 180° Y rotation
+  {
+    y: -100,
+    duration: 0.3,
+    transformOrigin: center,
+    opacity: 0,
+    rotateY: 180,
+  }, // Start above with a 180° Y rotation
   {
     y: 0,
     opacity: 1,
     rotateY: 0, // End at normal position and no rotation
-    duration: 0.51,
+    duration: 0.1,
     yoyo: true, // Yoyo back and forth
     ease: "back.out(1.7)",
     stagger: 0.2, // Each element animates sequentially
@@ -57,7 +63,7 @@ tl.fromTo(
     ".header",
     {
       duration: 2,
-      backgroundSize: 23000,
+      backgroundSize: 10,
       // backgroundRepeat: true,
       backgroundPosition: top,
     },
